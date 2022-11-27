@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>식사 시간 입력하는 페이지</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h2>식사시간</h2>
+    <h3>식사시간을 추가해주세요</h3><hr>
+    <form action="eat_check.php" method="post">
+      <table>
+        <tr>
+          <td>이름을 입력해주세요</td>
+          <td><input type="text" name="user"></td>
+        </tr>
+        <tr>
+          <td>날짜를 입력해주세요</td>
+          <td><input type="date" name="date"></td>
+        </tr>
+        <tr>
+          <td>아침 시간을 입력해주세요</td>
+          <td><input type="time" name="breakfast"></td>
+        </tr>
+        <tr>
+          <td>점심 시간을 입력해주세요</td>
+          <td><input type="time" name="lunch"></td>
+        </tr>
+        <tr>
+          <td>저녁 시간을 입력해주세요</td>
+          <td><input type="time" name="dinner"></td>
+        </tr>
+      </table>
+      <input type="submit" value="입력 완료">
+      <input type="reset" value="다시 입력하기">
+      <div>
+        <button onclick="history.back()">뒤로가기</button>
+      </div>
+    </form>
+    <form action="eat_select.php" method="post">
+      <input type="submit" value="도서 목록 조회">
+  </body>
+</html>
